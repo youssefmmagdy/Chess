@@ -27,20 +27,21 @@ import java.nio.file.Paths;
 import java.util.*;
 import static Game.Game.*;
 import static View.Eintrag.*;
+import static javafx.application.Application.launch;
 
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
 
 public class Spiel{
     public static void main(String[] args){
-
+        launch(args);
     }
 
     static CellBox[][] boxes;
     static GridPane grid;
     static boolean flag;
-    static ImageView whiteKing = new ImageView(new Image("White_King.jpg",100,100,false,false));
     static ImageView whiteQueen = new ImageView(new Image("White_Queen.jpg",100,100,false,false));
+    static ImageView whiteKing = new ImageView(new Image("file:///C:/Users/Admin/Documents/Developer/Chess/src/White_King.jpg",100,100,false,false));
     static ImageView whiteKnight = new ImageView(new Image("White_Knight.jpg",100,100,false,false));
     static ImageView whiteBishop = new ImageView(new Image("White_Bishop.jpg",100,100,false,false));
     static ImageView whiteRook = new ImageView(new Image("White_Rook.jpg",100,100,false,false));
